@@ -1,0 +1,84 @@
+*{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+
+}
+
+body{
+    height:100vh;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    background: linear-gradient(45deg, #34c, #f24);
+    color: #333;
+    flex-direction: column;
+}
+
+.faq-container{
+    max-width: 600px;
+    margin: 0 auto;
+
+}
+.faq{
+    background-color:transparent;
+    border:1px solid #444443;
+    margin: 20px 0;
+    padding: 60px;
+    position: relative;
+    overflow: hidden;
+    transition: 0.5s ease;
+    color: #fafafa;
+}
+h1{
+    margin: 2rem 0;
+    color: #fafafa;
+}
+h3{
+    margin: 1rem 0;
+}
+.faq-toggle{
+    padding: 0 5px ;
+    position: absolute;
+    top:20px;
+    right:20px;
+    height: 30px;
+    width: 30px;
+    background-color: #dbd8d8;
+    border-radius: 50%;
+    border: none;
+}
+
+.faq-toggle:focus{
+    outline: 0;
+}
+
+i.fa-times{
+    display: none;
+}
+
+.faq-text{
+    display: none;
+    margin: 30px 0 0;
+}
+
+.faq.active{
+    background-color: #fff;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.1), 0 3px 6px rgba(0,0,0,0.1) ;
+    color: #333;
+}
+
+.faq.active .faq-text{
+    display: block;
+    
+}
+
+.faq.active .faq-toggle i.fa-times{
+    display: block;
+    color: rgb(17, 17, 17)
+
+}
+
+.faq.active .faq-toggle i.fa-chevron-down{
+    display: none;
+}
